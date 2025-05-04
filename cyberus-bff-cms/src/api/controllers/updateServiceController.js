@@ -5,6 +5,6 @@ exports.updateService = async (req, res) => {
         const result = await updateServiceService.forwardToBackend(req.body);
         res.status(200).json(result);
       } catch (error) {
-        res.status(500).json(error.status)
+        res.status(500).json(error)
       }
  };

@@ -9,6 +9,7 @@ const listUserController = require('../controllers/listUserController');
 const listServiceController = require('../controllers/listServiceController');
 const updateServiceController = require('../controllers/updateServiceController');
 const deleteServiceController = require('../controllers/deleteServiceController');
+const listLogController = require('../controllers/listLogController');
 
 
 router.post('/login', loginController.loginUser);
@@ -16,6 +17,7 @@ router.post('/session', sessionController.sessionUser);
 router.post('/add', userController.addUser);
 router.post('/list-user', listUserController.listUser);
 router.post('/list-service', listServiceController.listService);
+router.post('/list-log', listLogController.listLog);
 router.post('/config', configController.configUser);
 router.post('/update-service', updateServiceController.updateService);
 router.post('/delete-service', deleteServiceController.deleteService);

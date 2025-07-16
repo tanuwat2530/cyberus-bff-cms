@@ -10,6 +10,9 @@ const listServiceController = require('../controllers/listServiceController');
 const updateServiceController = require('../controllers/updateServiceController');
 const deleteServiceController = require('../controllers/deleteServiceController');
 const listLogController = require('../controllers/listLogController');
+const listAllServiceController = require('../controllers/listAllServiceController');
+const pieReportController = require('../controllers/pieReportController');
+const chartReportController = require('../controllers/chartReportController');
 
 
 router.post('/login', loginController.loginUser);
@@ -21,6 +24,9 @@ router.post('/list-log', listLogController.listLog);
 router.post('/config', configController.configUser);
 router.post('/update-service', updateServiceController.updateService);
 router.post('/delete-service', deleteServiceController.deleteService);
+router.post('/all-shortcode', listAllServiceController.allService);
+router.post('/pie-report', pieReportController.pieReport);
+router.post('/chart-report', chartReportController.chartReport);
 
 
 module.exports = router;
